@@ -61,9 +61,9 @@ This project develops a real-time system that translates spoken words into sign 
   - Disk Space: 250 GB
   - GPU VRAM: 8-16 GB
 
--**Dataset:**
+- **Dataset:**
 
--How2Sign dataset
+  - How2Sign dataset
 
 
 ## Contributors
