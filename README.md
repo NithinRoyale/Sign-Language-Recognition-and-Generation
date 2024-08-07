@@ -13,7 +13,6 @@ This project develops a real-time system that translates spoken words into sign 
 - **Improved Accuracy**: Enhanced gesture accuracy and avatar realism.
 
 
-
 ## Installation
 
 1. **Clone the Repository:**
