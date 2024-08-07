@@ -12,12 +12,7 @@ This project develops a real-time system that translates spoken words into sign 
 - **Real-Time Processing**: Minimizes latency for immediate translation.
 - **Improved Accuracy**: Enhanced gesture accuracy and avatar realism.
 
-## Key Metrics
 
-- Reduced translation latency by 30%.
-- Improved gesture accuracy by 20%.
-- Increased communication effectiveness by 40%.
-- Achieved a 25% rise in positive user feedback.
 
 ## Installation
 
