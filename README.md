@@ -4,6 +4,11 @@
 
 This project develops a real-time system that translates spoken words into sign language using advanced speech recognition, sign language interpretation, and avatar technology. The system leverages sophisticated algorithms and machine learning techniques to address linguistic complexities and enhance avatar expressiveness, aiming to improve communication for deaf and hard-of-hearing individuals.
 
+## Hosted Link
+
+You can access the hosted version of the VR Learning Platform [Sign Language Recognition and Generation](https://NithinRoyale.github.io/Sign-Language-Recognition-and-Generation/).
+
+
 ## Features
 
 - **Speech Recognition**: Converts spoken words into text.
