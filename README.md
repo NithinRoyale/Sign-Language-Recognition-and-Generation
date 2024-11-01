@@ -9,6 +9,7 @@ This project develops a real-time system that translates spoken words into sign 
 You can access the hosted version of the VR Learning Platform [Sign Language Recognition and Generation](https://NithinRoyale.github.io/Sign-Language-Recognition-and-Generation/).
 
 
+
 ## Features
 
 - **Speech Recognition**: Converts spoken words into text.
