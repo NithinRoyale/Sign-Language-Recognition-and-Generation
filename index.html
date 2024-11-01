@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition and Generation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .videoContainer {
+            display: none;
+            position: relative;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .videoContainer iframe {
+            width: 100%;
+            height: 215px;
+            border-radius: 10px;
+        }
+
+        .closeButton {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .closeButton:hover {
+            background: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Sign Language Recognition and Generation</h1>
+    </header>
+    <main>
+        <section class="project">
+            <h2>Original Raw Video</h2>
+            <a href="#" class="viewLink" data-video-url="https://www.youtube.com/embed/8hyJv3Rt4GY?si=uF93D8bfoyq-KwIf" data-container-id="originalVideo">View</a>
+            <div id="originalVideo" class="videoContainer">
+                <button class="closeButton">&times;</button>
+                <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="project">
+            <h2>Original Pose video </h2>
+            <a href="#" class="viewLink" data-video-url="https://www.youtube.com/embed/qY3lUxeIKXU?si=xS0OcDV9R-rtkfc5" data-container-id="originalPose">View</a>
+            <div id="originalPose" class="videoContainer">
+                <button class="closeButton">&times;</button>
+                <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="project">
+            <h2>Generated Output video</h2>
+            <a href="#" class="viewLink" data-video-url="https://www.youtube.com/embed/CXvGCnYXKBc?si=Ad-Pk9xJkLRopT1w" data-container-id="generatedOutput">View</a>
+            <div id="generatedOutput" class="videoContainer">
+                <button class="closeButton">&times;</button>
+                <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.viewLink').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const videoUrl = this.getAttribute('data-video-url');
+                const containerId = this.getAttribute('data-container-id');
+                const videoContainer = document.getElementById(containerId);
+                const iframe = videoContainer.querySelector('iframe');
+                iframe.src = videoUrl;
+                videoContainer.style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('.closeButton').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const videoContainer = this.closest('.videoContainer');
+                const iframe = videoContainer.querySelector('iframe');
+                iframe.src = ''; // Stop the video
+                videoContainer.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
